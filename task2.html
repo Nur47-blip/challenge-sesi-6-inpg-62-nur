@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <script>
+        function askValue(){
+            let input = prompt("Masukkan nilai (1-100)");
+            if (input<1||input>100){
+                // invalid
+                alert("cannot calculate your grade");
+            }
+            else if (input >= 80){
+                alert("your grade is A");
+            }
+            else if (input >= 60){
+                alert("your grade is B");
+            }
+            else if (input >= 40){
+                alert("your grade is C");
+            }
+            else {
+                alert("your grade is D");
+            } 
+        }
+    </script>
+</head>
+<body onload="askValue()">
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+    <script>
+        function myFunction(n){
+            // versi output ke console
+            let s = "";
+            for (let i = 0; i < n; i++){
+                s += "O";
+            }
+            for (let i = 0; i < n; i++){
+                console.log(s);
+            }
+        }
+
+        function myFunctionDiv(n){
+            // versi output ke innerHTML
+            let s = "";
+            for (let i = 0; i < n; i++){
+                s += "O";
+            }
+            s += "<br/>";
+            for (let i = 0; i < n; i++){
+                document.getElementById("output").innerHTML += s;
+            }
+        }
+        </script>
+</head>
+<body onload="myFunction(4)">
+    <button onclick="myFunctionDiv(4)">Generate 4 baris</button>
+    <div id="output"></div>
+</body>
+</html>
